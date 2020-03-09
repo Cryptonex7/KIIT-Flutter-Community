@@ -33,6 +33,7 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
       imageName: "2785427.jpg",
     ),
   ];
+  String skipButtonText = "Skip";
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +42,7 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
         children: <Widget>[
           PageView(
             controller: pageViewController,
+            onPageChanged: _onPageViewChange,
             children: pages,
           ),
           Container(
@@ -56,8 +58,9 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
           ),
           Container(
               alignment: Alignment.bottomRight,
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
               child: Container(
-                width: MediaQuery.of(context).size.width * 0.25,
+                width: MediaQuery.of(context).size.width * 0.32,
                 child: ButtonTheme(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
@@ -70,13 +73,14 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "Skip",
+                          skipButtonText,
                           style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.blue.shade900
-                          ),
+                              fontSize: 20, color: Colors.blue.shade700),
                         ),
-                        Icon(Icons.arrow_forward_ios, color: Colors.blue.shade900,),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.blue.shade700,
+                        ),
                       ],
                     ),
                     onPressed: () {
@@ -88,6 +92,14 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
         ],
       ),
     );
+  }
+
+  _onPageViewChange(int page) {
+    if (page == pages.length - 1) {
+      setState(() {
+        skipButtonText = "Done";
+      });
+    }
   }
 }
 
@@ -102,8 +114,11 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(6),
+      height: MediaQuery.of(context).size.height,
+      width: double.infinity,
+      padding: EdgeInsets.fromLTRB(0, 6, 0, 10),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
