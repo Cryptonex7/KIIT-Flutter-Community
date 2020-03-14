@@ -293,10 +293,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                           BoxShadow(
                             color: Colors.black38,
                             blurRadius:
-                                5.0, // has the effect of softening the shadow
+                                5.0, 
                             offset: Offset(
-                              4.0, // horizontal, move right 10
-                              4.0, // vertical, move down 10
+                              4.0, 
+                              4.0, 
                             ),
                           ),
                         ],
