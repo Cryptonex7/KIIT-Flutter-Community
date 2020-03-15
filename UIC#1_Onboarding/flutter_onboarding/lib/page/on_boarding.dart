@@ -18,7 +18,7 @@ class MyOnBoardingPages extends StatefulWidget {
 }
 
 class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
-  PageController pageViewController = PageController(viewportFraction: 0.9);
+  PageController pageViewController = PageController(viewportFraction: 0.99);
   var pages = <Widget>[
     OnBoardingPage(
       message: "Events Management has never been so easy.",
@@ -44,6 +44,7 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
             controller: pageViewController,
             onPageChanged: _onPageViewChange,
             children: pages,
+            physics: BouncingScrollPhysics(),
           ),
           Container(
             alignment: Alignment.bottomCenter,
@@ -114,8 +115,9 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(0),
       height: MediaQuery.of(context).size.height,
-      width: double.infinity,
+      width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.fromLTRB(0, 6, 0, 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -133,7 +135,7 @@ class OnBoardingPage extends StatelessWidget {
                 fontWeight: FontWeight.w300,
               ),
             ),
-          )
+          ),
         ],
       ),
     );
