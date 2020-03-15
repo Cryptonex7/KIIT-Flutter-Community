@@ -59,19 +59,20 @@ class _MyOnBoardingPagesState extends State<MyOnBoardingPages> {
           ),
           Container(
               alignment: Alignment.bottomRight,
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 25),
               child: Container(
-                width: MediaQuery.of(context).size.width * 0.32,
+                width: MediaQuery.of(context).size.width * 0.26,
                 child: ButtonTheme(
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(20),
-                    bottomLeft: Radius.circular(20),
-                  )),
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      bottomLeft: Radius.circular(20),
+                    ),
+                  ),
                   child: FlatButton(
                     color: Colors.black12,
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Text(
                           skipButtonText,
