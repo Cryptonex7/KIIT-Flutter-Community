@@ -1,0 +1,123 @@
+import 'package:zefyr/zefyr.dart';
+import 'package:quill_delta/quill_delta.dart';
+
+
+ZefyrScaffold(
+        child: ZefyrEditor(
+          controller: _controller, 
+          focusNode: _focusNode,
+          padding: EdgeInsets.all(15),
+        ),
+      ),
+
+
+
+
+
+
+
+
+
+Row(
+                    children: <Widget>[
+                      IconButton(
+                        icon: this.isLiked
+                            ? Icon(
+                                Icons.favorite,
+                                color: Colors.red[300],
+                              )
+                            : Icon(Icons.favorite_border),
+                        onPressed: () {
+                          if (!this.isLiked) {
+                            setState(() {
+                              this.isLiked = true;
+                              this.likes++;
+                            });
+                          } else {
+                            setState(() {
+                              this.isLiked = false;
+                              this.likes--;
+                            });
+                          }
+                        },
+                      ),
+                      Text(
+                        "${this.likes}",
+                        style: TextStyle(fontFamily: 'Baloo'),
+                      )
+                    ],
+                  ),
+                  Row(children: [
+                    IconButton(
+                      icon: Icon(Icons.bookmark_border),
+                      onPressed: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return SimpleDialog(
+                                elevation: 10,
+                                children: <Widget>[
+                                  Center(
+                                    child: Column(
+                                      children: <Widget>[
+                                        Text("Post Saved Successfully"),
+                                        RaisedButton(
+                                          elevation: 0,
+                                          child: Text(
+                                            "OK",
+                                            style: TextStyle(color: Colors.red),
+                                          ),
+                                          color: Colors.white,
+                                          onPressed: () {
+                                            Navigator.pop(context);
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                                backgroundColor: Colors.white,
+                                title: Center(
+                                  child: Text(
+                                    'Post Saved',
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                ),
+                              );
+                            });
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.share),
+                      onPressed: () {
+                        Share.share(
+                            "Hey read this news from ColNews Blogger: ${widget.title}");
+                      },
+                    )
+                  ])
+
+
+ListView.builder(
+                      physics: ClampingScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: snapshot.data.documents.length,
+                      itemBuilder: (BuildContext context, int i) {
+                        return NewsCard(
+                          title: snapshot.data.documents[i]['blog_title'],
+                          subtitle: snapshot.data.documents[i]['blog_subtitle'],
+                          image: snapshot.data.documents[i]['blog_image'],
+                          body: snapshot.data.documents[i]['blog_body'],
+                          date: snapshot.data.documents[i]['date'],
+                        );
+                      },
+                    );
+
+
+
+this.isUploaded == true
+              ? Image.network(this.downloadUrl, height: deviceHeight * 0.6,)
+              : SizedBox(height: 5,),
+            RaisedButton(
+              child: Text('Select Image'),
+              onPressed: filePicker,
+            )
