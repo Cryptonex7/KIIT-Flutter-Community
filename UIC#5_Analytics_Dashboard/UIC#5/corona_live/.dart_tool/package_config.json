@@ -32,18 +32,6 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "charts_common",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/charts_common-0.9.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.3"
-    },
-    {
-      "name": "charts_flutter",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/charts_flutter-0.9.0",
-      "packageUri": "lib/",
-      "languageVersion": "1.23"
-    },
-    {
       "name": "collection",
       "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.12",
       "packageUri": "lib/",
@@ -128,18 +116,6 @@
       "languageVersion": "2.5"
     },
     {
-      "name": "localstorage",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/localstorage-3.0.2+5",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
-    },
-    {
-      "name": "logging",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/logging-0.11.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "matcher",
       "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6",
       "packageUri": "lib/",
@@ -158,24 +134,6 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "path_provider",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_macos",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+3",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
-      "name": "path_provider_platform_interface",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-1.0.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.1"
-    },
-    {
       "name": "pedantic",
       "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
       "packageUri": "lib/",
@@ -186,12 +144,6 @@
       "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.4"
-    },
-    {
-      "name": "platform",
-      "rootUri": "file:///F:/flutter/.pub-cache/hosted/pub.dartlang.org/platform-2.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "1.24"
     },
     {
       "name": "platform_detect",
@@ -356,7 +308,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-05-29T16:49:33.849815Z",
+  "generated": "2020-05-30T12:57:08.652508Z",
   "generator": "pub",
   "generatorVersion": "2.8.2"
 }

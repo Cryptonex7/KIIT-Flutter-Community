@@ -7,7 +7,6 @@ INJECTED from C:\flutter projects\corona_live\android\app\src\main\AndroidManife
 MERGED from C:\flutter projects\corona_live\android\app\src\main\AndroidManifest.xml:1:1-49:12
 MERGED from [:shared_preferences] C:\flutter projects\corona_live\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] C:\flutter projects\corona_live\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:path_provider] C:\flutter projects\corona_live\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher_web] C:\flutter projects\corona_live\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\KIIT\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\KIIT\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -111,8 +110,6 @@ MERGED from [:shared_preferences] C:\flutter projects\corona_live\build\shared_p
 MERGED from [:shared_preferences] C:\flutter projects\corona_live\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\flutter projects\corona_live\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\flutter projects\corona_live\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\flutter projects\corona_live\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\flutter projects\corona_live\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_web] C:\flutter projects\corona_live\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher_web] C:\flutter projects\corona_live\build\url_launcher_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\KIIT\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
